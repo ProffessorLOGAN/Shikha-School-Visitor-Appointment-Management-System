@@ -1,0 +1,132 @@
+.navbar{
+    width:100%;
+    font-size:1.2rem;
+    font-weight:bold;
+  
+
+}
+
+#image{
+    color:rgba(73, 68, 68, 0.63)
+    
+}
+
+.img{ 
+    width:5%;
+    height:5%;
+    margin-left: 10%;
+  }
+  .logo{ 
+    width:5vw;
+    height:8vh;
+}
+.navbar-nav{
+    padding-left: 30%;
+    padding-right: 10%;
+    position: relative;
+   
+}
+.navbar-brand{
+    margin-left: 30px;
+}
+.navbar-nav a{
+color: #ffffff;
+padding: 10px 0;
+transition: all 0.5s ease;
+}
+
+.navbar-nav a.active,
+.navbar-nav a:hover{
+
+	color: rgb(80, 245, 51);
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+
+@media (max-width: 970px) {
+.navbar-nav{
+    display:none;
+    visibility: hidden;
+}
+
+}
+
+@media (max-width: 1024px) {
+   .navbar-nav{  
+       padding-left: 6%;
+
+}
+
+.logo{ 
+    width:8vw;
+    height:7vh;
+}
+
+
+}
+
+.appoint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.appoint .imgappoint{
+    flex:1 1 40rem;
+}
+
+.appoint .imgappoint img{
+    height:90vh;
+    width:100%;
+}
+
+.appoint .content1{
+    flex:1 1 40rem;
+}

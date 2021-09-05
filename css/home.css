@@ -1,0 +1,15 @@
+.body{
+    background-color: black;
+   
+}
+.text{
+    color: white;
+    font-weight: 500;
+    font-size: 5em;
+}
+
+.box2 img{
+   width:fit-content;
+   height: 60vh;
+  
+}
